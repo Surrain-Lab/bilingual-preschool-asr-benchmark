@@ -1,4 +1,4 @@
-# ASR_Pipeline
+# bilingual-preschool-asr-benchmark
 
 Code and derived data for *Measuring language environments in Spanish–English
 bilingual preschoolers: Benchmarking automatic speech recognition on daylong
