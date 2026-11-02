@@ -1,0 +1,9 @@
+﻿clip_id,n_raters,n_clusters,n_clusters_multi_rater,max_cluster_span_ms,median_cluster_span_ms
+P06_pre_097,4,78,70,11019,1823
+P07_pre_093,2,31,25,5160,1460
+P08_pre_018,4,47,42,19276,2300
+P08_pre_030,4,48,41,25642,2299
+P10_pre_054,4,49,33,11329,2128
+P11_pre_084,2,79,69,6146,1603
+P13_pre_034,2,57,41,7400,1980
+P14_pre_1_021,2,27,10,11100,2025

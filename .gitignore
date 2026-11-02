@@ -1,0 +1,10 @@
+config/config.yaml
+work/
+.venv/
+__pycache__/
+*.pyc
+figures_out/*.png
+tables_out/*.tex
+figures_out/*.pdf
+figures_out/*.csv
+config/recording_id_map.csv

@@ -1,0 +1,4 @@
+repo_label,raw_recording_id,matches_paper_participant
+# Generated locally by stage2_aggregate/anonymise_ids.py.
+# The real file is the de-anonymisation key and is gitignored - never commit it.
+P01_pre,<your-recording-id>,yes

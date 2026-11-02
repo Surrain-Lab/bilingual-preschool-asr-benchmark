@@ -1,0 +1,7 @@
+pipeline,kchi_macro_wer,adult_macro_wer,overall_macro_wer
+Human-TS + WhisperX (control),0.7596,0.7035,0.7155
+VTC1 + WhisperX,0.8256,0.9795,0.8198
+VTC2 + WhisperX,0.7533,0.7215,0.7136
+VTC2-NoLang + WhisperX,0.7660,0.7269,0.7219
+WhisperX-VAD + VTC1 (post-hoc),1.0217,0.8971,0.7327
+WhisperX-VAD + VTC2 (post-hoc),1.0338,0.8715,0.6955

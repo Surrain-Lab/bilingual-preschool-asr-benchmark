@@ -1,0 +1,12 @@
+recording,clip,mean_volume_dB,max_volume_dB,raw_annotation,cause,detail,note
+P09_pre,P09_pre_061,-33.3,0.0,non-empty,annotated_nonlexical_only,1 utterance: &=noise [KCHI],xxx (unintelligible) and &= (paralinguistic) codes removed by the text cleanup -> 0 scoreable words
+P12_pre,P12_pre_024,-22.3,0.0,non-empty,annotated_nonlexical_only,"5 utterances: 3x xxx, 1x &=laughs [OCH/FEM]",xxx (unintelligible) and &= (paralinguistic) codes removed by the text cleanup -> 0 scoreable words
+P12_pre,P12_pre_048,-35.3,0.0,non-empty,annotated_nonlexical_only,"3 utterances: &=noise, 2x &=laughs [KCHI]",xxx (unintelligible) and &= (paralinguistic) codes removed by the text cleanup -> 0 scoreable words
+P12_pre,P12_pre_049,-25.5,0.0,non-empty,annotated_nonlexical_only,1 utterance: &=noise [KCHI],xxx (unintelligible) and &= (paralinguistic) codes removed by the text cleanup -> 0 scoreable words
+P05_pre,P05_pre_067,-16.6,0.0,empty (0 bytes),annotator_recorded_no_speech,no transcribable speech in clip,annotator reviewed clip and transcribed nothing
+P07_pre,P07_pre_020,-35.3,0.0,empty (0 bytes),annotator_recorded_no_speech,no transcribable speech in clip,annotator reviewed clip and transcribed nothing
+P07_pre,P07_pre_040,-44.2,-5.0,empty (0 bytes),annotator_recorded_no_speech,no transcribable speech in clip,annotator reviewed clip and transcribed nothing
+P09_pre,P09_pre_005,-38.4,-5.2,empty (0 bytes),annotator_recorded_no_speech,no transcribable speech in clip,annotator reviewed clip and transcribed nothing
+P09_pre,P09_pre_006,-36.4,0.0,empty (0 bytes),annotator_recorded_no_speech,no transcribable speech in clip,annotator reviewed clip and transcribed nothing
+P09_pre,P09_pre_045,-35.1,0.0,empty (0 bytes),annotator_recorded_no_speech,no transcribable speech in clip,annotator reviewed clip and transcribed nothing
+P14_pre,P14_pre_027,-25.4,0.0,empty (0 bytes),annotator_recorded_no_speech,no transcribable speech in clip,annotator reviewed clip and transcribed nothing

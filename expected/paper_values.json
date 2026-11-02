@@ -1,0 +1,661 @@
+{
+  "_source": "Values as printed in the paper. verify.py regenerates each from data/derived and compares.",
+  "agreement_total_words": {
+    "adult_en": {
+      "r": 0.93,
+      "slope": 0.68,
+      "n": 75
+    },
+    "adult_es": {
+      "r": 0.9,
+      "slope": 0.64,
+      "n": 149
+    },
+    "kchild_en": {
+      "r": 0.88,
+      "slope": 0.77,
+      "n": 79
+    },
+    "kchild_es": {
+      "r": 0.86,
+      "slope": 0.53,
+      "n": 154
+    }
+  },
+  "agreement_distinct_words": {
+    "adult_en": {
+      "r": 0.88,
+      "slope": 0.8,
+      "n": 63
+    },
+    "adult_es": {
+      "r": 0.87,
+      "slope": 0.79,
+      "n": 148
+    },
+    "kchild_en": {
+      "r": 0.83,
+      "slope": 0.88,
+      "n": 70
+    },
+    "kchild_es": {
+      "r": 0.89,
+      "slope": 0.82,
+      "n": 152
+    }
+  },
+  "agreement_type_token_ratio": {
+    "adult_en": {
+      "r": 0.53,
+      "slope": 0.38,
+      "n": 63
+    },
+    "adult_es": {
+      "r": 0.62,
+      "slope": 0.62,
+      "n": 142
+    },
+    "kchild_en": {
+      "r": 0.27,
+      "slope": 0.18,
+      "n": 69
+    },
+    "kchild_es": {
+      "r": 0.41,
+      "slope": 0.4,
+      "n": 141
+    }
+  },
+  "irr_symmetric_wer": {
+    "kchi": 0.354,
+    "adult": 0.539,
+    "overall": 0.46
+  },
+  "irr_kchi_composition": {
+    "sub": 0.197,
+    "del": 0.079,
+    "ins": 0.078
+  },
+  "krippendorff_alpha_pooled": {
+    "detection": 0.6287,
+    "speaker": 0.4738,
+    "speaker_coarse": 0.4771,
+    "intelligibility": 0.4835,
+    "lang_utterance": 0.4942,
+    "lang_utterance_esen": 0.8793,
+    "lang_token_esen": 0.9352
+  },
+  "error_counts_vtc2": {
+    "kchi": {
+      "sub": 4054,
+      "del": 4930,
+      "ins": 489,
+      "ref": 13218
+    },
+    "male_adult": {
+      "sub": 1720,
+      "del": 2677,
+      "ins": 231,
+      "ref": 7040
+    },
+    "female_adult": {
+      "sub": 3337,
+      "del": 5359,
+      "ins": 663,
+      "ref": 12675
+    },
+    "adult_combined": {
+      "sub": 5329,
+      "del": 7665,
+      "ins": 649,
+      "ref": 19715
+    },
+    "spanish": {
+      "sub": 7469,
+      "del": 12128,
+      "ins": 854,
+      "ref": 30023
+    },
+    "english": {
+      "sub": 1617,
+      "del": 530,
+      "ins": 2885,
+      "ref": 3622
+    }
+  },
+  "percent_spanish": {
+    "adult_manual": 89.3,
+    "adult_auto": 77.2,
+    "kchi_manual": 90.4,
+    "kchi_auto": 70.3
+  },
+  "corpus": {
+    "total_words": 37131,
+    "english": 4131,
+    "spanish": 33000,
+    "scored_clips": 157,
+    "excluded_clips": 11,
+    "recordings": 14,
+    "clips": 168
+  },
+  "supp_wer_macro": {
+    "Human-TS + WhisperX (control)": {
+      "kchi": 0.76,
+      "adult": 0.704,
+      "overall": 0.715
+    },
+    "VTC1 + WhisperX": {
+      "kchi": 0.826,
+      "adult": 0.98,
+      "overall": 0.82
+    },
+    "VTC2 + WhisperX": {
+      "kchi": 0.753,
+      "adult": 0.721,
+      "overall": 0.714
+    },
+    "VTC2-NoLang + WhisperX": {
+      "kchi": 0.766,
+      "adult": 0.727,
+      "overall": 0.722
+    },
+    "WhisperX-VAD + VTC1 (post-hoc)": {
+      "kchi": 1.022,
+      "adult": 0.897,
+      "overall": 0.733
+    },
+    "WhisperX-VAD + VTC2 (post-hoc)": {
+      "kchi": 1.034,
+      "adult": 0.871,
+      "overall": 0.695
+    }
+  },
+  "supp_seg_gap": {
+    "_note": "gap = pipeline macro WER minus the Human-TS control, same stratum",
+    "VTC1 + WhisperX": {
+      "kchi": 0.066,
+      "adult": 0.276,
+      "overall": 0.104
+    },
+    "VTC2 + WhisperX": {
+      "kchi": -0.006,
+      "adult": 0.018,
+      "overall": -0.002
+    },
+    "VTC2-NoLang + WhisperX": {
+      "kchi": 0.006,
+      "adult": 0.023,
+      "overall": 0.006
+    },
+    "WhisperX-VAD + VTC1 (post-hoc)": {
+      "kchi": 0.262,
+      "adult": 0.194,
+      "overall": 0.017
+    },
+    "WhisperX-VAD + VTC2 (post-hoc)": {
+      "kchi": 0.274,
+      "adult": 0.168,
+      "overall": -0.02
+    }
+  },
+  "supp_corr_by_model": {
+    "HumanTS_en": 0.93,
+    "HumanTS_es": 0.94,
+    "VTC1_en": 0.87,
+    "VTC1_es": 0.85,
+    "VTC2_en": 0.97,
+    "VTC2_es": 0.96,
+    "OnlyWhisper_en": 0.84,
+    "OnlyWhisper_es": 0.85,
+    "OnlyWhisperVTC2_en": 0.85,
+    "OnlyWhisperVTC2_es": 0.93
+  },
+  "supp_bootstrap_ci": {
+    "KCHI|HumanTS": [
+      0.76,
+      0.661,
+      0.896
+    ],
+    "KCHI|VTC1": [
+      0.826,
+      0.75,
+      0.919
+    ],
+    "KCHI|VTC2": [
+      0.753,
+      0.679,
+      0.834
+    ],
+    "KCHI|VTC2-NL": [
+      0.766,
+      0.688,
+      0.854
+    ],
+    "KCHI|WhisperX": [
+      1.022,
+      0.856,
+      1.242
+    ],
+    "ADULT|HumanTS": [
+      0.704,
+      0.64,
+      0.754
+    ],
+    "ADULT|VTC1": [
+      0.98,
+      0.795,
+      1.167
+    ],
+    "ADULT|VTC2": [
+      0.721,
+      0.662,
+      0.77
+    ],
+    "ADULT|VTC2-NL": [
+      0.727,
+      0.666,
+      0.776
+    ],
+    "ADULT|WhisperX": [
+      0.897,
+      0.822,
+      0.972
+    ],
+    "OVERALL|HumanTS": [
+      0.715,
+      0.655,
+      0.769
+    ],
+    "OVERALL|VTC1": [
+      0.82,
+      0.741,
+      0.895
+    ],
+    "OVERALL|VTC2": [
+      0.714,
+      0.658,
+      0.762
+    ],
+    "OVERALL|VTC2-NL": [
+      0.722,
+      0.665,
+      0.77
+    ],
+    "OVERALL|WhisperX": [
+      0.733,
+      0.673,
+      0.79
+    ],
+    "KCHI|WhisperX-VTC2": [
+      1.034,
+      0.872,
+      1.247
+    ],
+    "ADULT|WhisperX-VTC2": [
+      0.871,
+      0.822,
+      0.917
+    ],
+    "OVERALL|WhisperX-VTC2": [
+      0.695,
+      0.65,
+      0.739
+    ]
+  },
+  "supp_pairwise": {
+    "KCHI|HumanTS|VTC1": [
+      -0.066,
+      "*"
+    ],
+    "KCHI|HumanTS|VTC2": [
+      0.006,
+      ""
+    ],
+    "KCHI|HumanTS|VTC2-NL": [
+      -0.006,
+      ""
+    ],
+    "KCHI|HumanTS|WhisperX": [
+      -0.262,
+      "***"
+    ],
+    "KCHI|VTC1|VTC2": [
+      0.072,
+      "***"
+    ],
+    "KCHI|VTC1|VTC2-NL": [
+      0.06,
+      "***"
+    ],
+    "KCHI|VTC1|WhisperX": [
+      -0.196,
+      "**"
+    ],
+    "KCHI|VTC2|VTC2-NL": [
+      -0.013,
+      ""
+    ],
+    "KCHI|VTC2|WhisperX": [
+      -0.268,
+      "***"
+    ],
+    "KCHI|VTC2-NL|WhisperX": [
+      -0.256,
+      "***"
+    ],
+    "ADULT|HumanTS|VTC1": [
+      -0.276,
+      "***"
+    ],
+    "ADULT|HumanTS|VTC2": [
+      -0.018,
+      "*"
+    ],
+    "ADULT|HumanTS|VTC2-NL": [
+      -0.023,
+      "**"
+    ],
+    "ADULT|HumanTS|WhisperX": [
+      -0.194,
+      "***"
+    ],
+    "ADULT|VTC1|VTC2": [
+      0.258,
+      "***"
+    ],
+    "ADULT|VTC1|VTC2-NL": [
+      0.253,
+      "**"
+    ],
+    "ADULT|VTC1|WhisperX": [
+      0.082,
+      ""
+    ],
+    "ADULT|VTC2|VTC2-NL": [
+      -0.005,
+      "***"
+    ],
+    "ADULT|VTC2|WhisperX": [
+      -0.176,
+      "***"
+    ],
+    "ADULT|VTC2-NL|WhisperX": [
+      -0.17,
+      "***"
+    ],
+    "OVERALL|HumanTS|VTC1": [
+      -0.104,
+      "***"
+    ],
+    "OVERALL|HumanTS|VTC2": [
+      0.002,
+      ""
+    ],
+    "OVERALL|HumanTS|VTC2-NL": [
+      -0.006,
+      ""
+    ],
+    "OVERALL|HumanTS|WhisperX": [
+      -0.017,
+      ""
+    ],
+    "OVERALL|VTC1|VTC2": [
+      0.106,
+      "***"
+    ],
+    "OVERALL|VTC1|VTC2-NL": [
+      0.098,
+      "***"
+    ],
+    "OVERALL|VTC1|WhisperX": [
+      0.087,
+      "***"
+    ],
+    "OVERALL|VTC2|VTC2-NL": [
+      -0.008,
+      "**"
+    ],
+    "OVERALL|VTC2|WhisperX": [
+      -0.019,
+      ""
+    ],
+    "OVERALL|VTC2-NL|WhisperX": [
+      -0.011,
+      ""
+    ],
+    "KCHI|HumanTS|WhisperX-VTC2": [
+      -0.274,
+      "***"
+    ],
+    "KCHI|VTC1|WhisperX-VTC2": [
+      -0.208,
+      "**"
+    ],
+    "KCHI|VTC2|WhisperX-VTC2": [
+      -0.281,
+      "***"
+    ],
+    "KCHI|VTC2-NL|WhisperX-VTC2": [
+      -0.268,
+      "***"
+    ],
+    "KCHI|WhisperX|WhisperX-VTC2": [
+      -0.012,
+      ""
+    ],
+    "ADULT|HumanTS|WhisperX-VTC2": [
+      -0.168,
+      "***"
+    ],
+    "ADULT|VTC1|WhisperX-VTC2": [
+      0.108,
+      ""
+    ],
+    "ADULT|VTC2|WhisperX-VTC2": [
+      -0.15,
+      "***"
+    ],
+    "ADULT|VTC2-NL|WhisperX-VTC2": [
+      -0.145,
+      "***"
+    ],
+    "ADULT|WhisperX|WhisperX-VTC2": [
+      0.026,
+      ""
+    ],
+    "OVERALL|HumanTS|WhisperX-VTC2": [
+      0.02,
+      ""
+    ],
+    "OVERALL|VTC1|WhisperX-VTC2": [
+      0.124,
+      "***"
+    ],
+    "OVERALL|VTC2|WhisperX-VTC2": [
+      0.018,
+      ""
+    ],
+    "OVERALL|VTC2-NL|WhisperX-VTC2": [
+      0.026,
+      ""
+    ],
+    "OVERALL|WhisperX|WhisperX-VTC2": [
+      0.037,
+      "*"
+    ]
+  },
+  "additional": {
+    "_note": "Further values reported in the paper (agreement, type-token ratios, failure analyses). Percent values are on the 0-100 scale; tolerances in verify.py follow the printed rounding.",
+    "icc": {
+      "adult": [
+        0.94,
+        0.81,
+        0.99
+      ],
+      "kchild": [
+        0.97,
+        0.92,
+        0.99
+      ]
+    },
+    "ttr_means_manual_auto": {
+      "kchild_es": [
+        0.62,
+        0.78
+      ],
+      "adult_es": [
+        0.63,
+        0.76
+      ],
+      "kchild_en": [
+        0.77,
+        0.77
+      ],
+      "adult_en": [
+        0.83,
+        0.81
+      ]
+    },
+    "prop_spanish_r": {
+      "adult_clip": [
+        0.59,
+        147
+      ],
+      "kchild_clip": [
+        0.5,
+        151
+      ],
+      "adult_recording": 0.93,
+      "kchild_recording": 0.84
+    },
+    "zero_manual_clips_and_pipeline_nonzero": {
+      "adult_en": [
+        93,
+        68
+      ],
+      "kchild_en": [
+        89,
+        74
+      ],
+      "adult_es": [
+        19,
+        5
+      ],
+      "kchild_es": [
+        14,
+        0
+      ]
+    },
+    "irr_wer_split": {
+      "kchi_sub": 0.197,
+      "kchi_del": 0.079,
+      "adult_sub": 0.213,
+      "adult_del": 0.197,
+      "och_total": 0.682
+    },
+    "speaker_coarse_alpha": [
+      0.48,
+      0.28,
+      0.61
+    ],
+    "vtc2_macro_wer_pct": {
+      "MAL": [
+        78.1,
+        13
+      ],
+      "FEM": 74.6,
+      "KCHI_deletion_points": 36.8
+    },
+    "posthoc_vtc2_pct": {
+      "kchi_insertions": 46.1,
+      "adult_deletions": 73.4
+    },
+    "ranking_unchanged_without_P02": true,
+    "failure_analysis_summary": {
+      "label_agreement_pct": 99.5,
+      "label_words_en_es": 25915,
+      "label_words_agree": 25774,
+      "english_utterances": 2888,
+      "top25_utterances": 1251,
+      "top25_pct": 43,
+      "top3_utterances": 588,
+      "stock_nothing_pct": 18,
+      "stock_nonlexical_pct": 27,
+      "stock_nonspeech_pct": 44,
+      "stock_overlap_spanish_pct": 55,
+      "stock_overlap_english_pct": 13,
+      "english_words_nonspeech": 1830,
+      "english_words_nonspeech_pct": 26,
+      "neutral_words_in_english": 982,
+      "neutral_words_in_english_excl_no": 769,
+      "words_in_english_utterances": 7159,
+      "empty_segments": 2847,
+      "empty_minutes": 77,
+      "empty_overlapping": 493,
+      "empty_with_other_language_text": 2824,
+      "empty_other_language_words": 8559,
+      "posthoc_vtc1_unassigned_pct": 1.9,
+      "posthoc_vtc2_unassigned_pct": 9.2,
+      "coder_adult_minutes": 156,
+      "vtc1_adult_minutes": 199,
+      "vtc2_adult_minutes": 127,
+      "vtc1_adult_time_in_coder_adult_pct": 50,
+      "vtc1_adult_time_on_coder_child_pct": 21,
+      "vtc1_adult_time_uncoded_pct": 29,
+      "vtc2_adult_time_in_coder_adult_pct": 76,
+      "vtc2_adult_time_on_coder_child_pct": 4,
+      "vtc2_adult_time_uncoded_pct": 20,
+      "vtc1_adult_utterances_split_pct": 12,
+      "vtc2_adult_utterances_split_pct": 14,
+      "vtc1_adult_segment_median_s": 1.32,
+      "vtc2_adult_segment_median_s": 0.66,
+      "reference_words": 37131,
+      "reference_english": 4131,
+      "reference_spanish": 33000,
+      "reference_xxx_tokens": 231,
+      "reference_mixed_words": 1040
+    },
+    "stock_phrase_table": {
+      "thank you": [
+        241,
+        3,
+        57
+      ],
+      "yeah": [
+        207,
+        28,
+        44
+      ],
+      "you": [
+        140,
+        1,
+        51
+      ],
+      "bye": [
+        66,
+        5,
+        47
+      ],
+      "i'm sorry": [
+        22,
+        0,
+        59
+      ],
+      "all right": [
+        15,
+        0,
+        33
+      ],
+      "no": [
+        97,
+        311,
+        21
+      ],
+      "okay": [
+        78,
+        94,
+        27
+      ]
+    }
+  }
+}

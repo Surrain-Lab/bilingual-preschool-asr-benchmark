@@ -1,0 +1,5 @@
+﻿rater_id,n_clips,n_pairs,mean_sym_wer_vs_others
+AM,6,14,0.4914
+GJ,7,15,0.5534
+KM,5,13,0.5751
+VOR,6,14,0.494

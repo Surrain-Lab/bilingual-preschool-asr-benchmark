@@ -1,0 +1,29 @@
+# Copy to config/config.yaml and edit. config.yaml is gitignored.
+
+# ---- your data (stage 1). Nothing is shipped with this repo. ----
+audio_dir:      /path/to/your/audio            # one folder per recording, wav or mp3
+human_dir:      /path/to/your/human_transcripts # ELAN exports, one .txt per clip
+work_dir:       ./work                          # pipeline scratch + per-clip outputs
+
+# ---- stage 1 model checkouts (exported as env vars by the drivers) ----
+# ASR_PROJECT     - pipeline working directory (outputs go here)
+# ASR_VTC1_MODEL  - your voice_type_classifier checkout
+# ASR_VTC2_MODEL  - the VTC checkout CONTAINING VTC-2.0/model/best.ckpt
+vtc1_model:     /path/to/voice_type_classifier
+vtc2_model:     /path/to/VTC          # the dir holding VTC-2.0/, not its parent
+
+# ---- credentials. Use your own; none are bundled. ----
+# pyannote/VTC models are gated on Hugging Face: accept the model terms on the
+# hub, then create a read token at https://huggingface.co/settings/tokens
+hf_token:       ""            # or export HF_TOKEN in your shell instead
+# Not needed for the VTC2 path: VTC2 supplies the segments, so WhisperX never
+# loads its own gated pyannote VAD. Only required if you run WhisperX-VAD.
+
+# ---- pipeline settings (defaults reproduce the paper) ----
+whisper_model:  large-v3
+compute_type:   float16       # float32 if your GPU lacks fp16
+batch_size:     16
+languages:      [en, es]      # NOT read by any script (kept for reference). Whisper always
+                              # auto-detects; segments detected as other than en/es are
+                              # discarded afterwards - see stage1_pipeline/README.md
+clip_seconds:   300

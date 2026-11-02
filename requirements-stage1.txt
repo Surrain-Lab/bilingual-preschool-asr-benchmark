@@ -1,0 +1,17 @@
+# Stage 1 (audio -> transcripts) only. NOT installable alongside stage 2/3:
+# VTC1 needs a legacy pyannote-audio v1 environment that conflicts with current
+# torch. Use three separate environments - see stage1_pipeline/README.md.
+#
+# --- WhisperX / VTC2 environment ---
+# torch and torchaudio: install the build matching your CUDA version first,
+#   e.g.  pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+whisperx==3.7.4            # version used for every transcription run in the paper
+faster-whisper==1.2.0
+ctranslate2==4.6.0
+ffmpeg-python
+#
+# --- VTC1 environment (separate venv, legacy) ---
+# pyannote-audio==1.1.x  plus the model checkpoints from the voice-type-classifier repo
+#
+# --- VTC2 ---
+# distributed by LAAC-LSCP as a uv-managed project; see stage1_pipeline/README.md

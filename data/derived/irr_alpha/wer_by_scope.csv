@@ -1,0 +1,4 @@
+﻿scope,n_clips,n_pairs,mean_of_clip_means,mean_over_all_pairs,min_pair,max_pair,n_pairs_excluded_degenerate
+OVERALL,8,28,0.6058,0.5281,0.2934,1.45,0
+KCHI,7,27,0.3692,0.3727,0.15,0.7263,1
+ADULT,8,28,0.7984,0.7636,0.3316,1.873,0

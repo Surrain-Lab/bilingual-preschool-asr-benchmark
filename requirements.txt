@@ -1,0 +1,8 @@
+# Stage 2 + 3 (aggregation, tables, figures) - what verify.py and run_analysis.sh need.
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+openpyxl>=3.1
+pandas>=2.0
+jiwer>=3.0
+langdetect==1.0.9
